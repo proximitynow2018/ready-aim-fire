@@ -219,7 +219,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Occurance: 100
   Star: {fileID: 1674927616565040, guid: 5cff5291b47c2404a9a86bd340d9c0fd, type: 2}
-  Radius: 5
+  Radius: 10
   Offset: {x: 0, y: 0, z: 0}
 --- !u!4 &1206630649
 Transform:

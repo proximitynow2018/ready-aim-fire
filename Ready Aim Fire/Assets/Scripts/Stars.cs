@@ -16,16 +16,18 @@ public class Stars : MonoBehaviour {
 
 	private void Start()
 	{
-		Debug.Log("Drawing Stars");
-		for (int i = 0; (Occurance * 10) < i; i++)
+		Debug.Log(transform.name + ": Drawing Stars");
+		for (int i = 0; i < Occurance * 10; i++)
 		{
+			Debug.Log(transform.name + ": Testing #" + i);
 			Temp_RandomInt = Random.Range(0, Occurance + 1);
 			if (Temp_RandomInt == 1)
 			{
-				Temp_Clone = Instantiate(Star, transform);
+				Debug.Log(transform.name + ": Drawing Star #" + i);
+				Temp_Clone = Instantiate(Star);
 				Temp_Clone.transform.position = new Vector3(Random.Range(-1, Radius + 1), Random.Range(-1, Radius + 1), 1) + Offset;
 			}
 		}
-		Debug.Log("Stars Drawn");
+		Debug.Log(transform.name + ": Stars Drawn");
 	}
 }
